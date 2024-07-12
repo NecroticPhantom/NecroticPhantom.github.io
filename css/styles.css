@@ -22,7 +22,7 @@ body {
     text-decoration: none;
 }
 .textContainer {
-    width: 500px;
+    width: auto;
     height: 50px;
     border-radius: 50px;
     margin: auto;
