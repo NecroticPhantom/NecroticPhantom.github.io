@@ -1,73 +1,36 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="scripts.js"></script>
         <title>Home</title>
     </head>
     <body>
-        <style>
-            body {
-                background-color: black;
-            }
-            .container {
-                display: flex;
-	            justify-content: space-between;
-            }
-            .pagesHyperlinks {
-                width: 200px;
-                height: 50px;
-                border-radius: 50px;
-                margin: auto;
-                background-color: lime;
-                text-align: center;
-                line-height: 25px;
-            }
-            .currentPageHyperlink {
-                background-color: white;
-            }
-            .pagesHyperlinksText {
-                color: black;
-                text-decoration: none;
-            }
-        </style>
-        <div class="container" id="pagesHyperlinksContainer">
+        <div class="container" id="pageLinksContainer">
             <a href="https://necroticphantom.github.io">
-                <div class="pagesHyperlinks currentPageHyperlink" id="homeHyperlink">
-                    <p class="pagesHyperlinksText" id="homeHyperlinkText">Home</p>
+                <div class="pagesHyperlinks currentPageLink" id="homeLink">
+                    <p class="pageLinksText" id="homeLinkText">Home</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/about-me">
-                <div class="pagesHyperlinks" id="aboutMeHyperlink">
-                    <p class="pagesHyperlinksText" id="aboutMeHyperlinkText">About Me</p>
+                <div class="pagesLinks" id="aboutMeHyperlink">
+                    <p class="pageLinksText" id="aboutMeLinkText">About Me</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/programming-languages">
-                <div class="pagesHyperlinks" id="programmingLanguagesHyperlink">
-                    <p class="pagesHyperlinksText" id="programmingLanguagesHyperlinkText">Programming Languages</p>
+                <div class="pageLinks" id="programmingLanguagesHyperlink">
+                    <p class="pageLinksText" id="programmingLanguagesLinkText">Programming Languages</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/portfolio">
-                <div class="pagesHyperlinks" id="portfolioHyperlink">
-                    <p class="pagesHyperlinksText" id="portfolioHyperlinkText">Portfolio</p>
+                <div class="pageLinks" id="portfolioHyperlink">
+                    <p class="pageLinksText" id="portfolioLinkText">Portfolio</p>
                 </div>
             </a>
         </div>
-        <style>
-            .textContainer {
-                width: 500px;
-                height: 50px;
-                border-radius: 50px;
-                margin: auto;
-                background-color: black;
-                text-align: center;
-                line-height: 25px;
-            }
-            .text {
-                color: white;
-                text-decoration: none;
-            }
-        </style>
         <div class="container" id="profileLinksContainer">
             <p class="text" id="profiles">Here are links to my github and replit profiles:</p>
+            <br>
             <a href="https://github.com/necroticphantom" target="_blank">
                 <img scr="img/github-mark.png" alt="github profile">
             </a>
