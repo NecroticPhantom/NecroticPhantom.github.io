@@ -6,9 +6,9 @@ body {
     justify-content: space-between;
 }
 .pageLinks {
-    width: 200rem;
-    height: 50rem;
-    border-radius: 50rem;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 5rem;
     margin: auto;
     background-color: lime;
 }
@@ -16,19 +16,19 @@ body {
     background-color: white;
 }
 .pageLinksText {
-    line-height: 50rem;
+    line-height: 5rem;
     text-align: center;
     color: black;
 }
 .textContainer {
     width: auto;
-    height: 50rem;
-    border-radius: 50rem;
+    height: 5rem;
+    border-radius: 5rem;
     margin: auto;
     background-color: black;
 }
 .text {
-    line-height: 50rem;
+    line-height: 5rem;
     text-align: center;
     color: white;
 }
