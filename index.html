@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Main</title>
+        <title>Home</title>
     </head>
     <body>
         <style>
@@ -19,36 +19,51 @@
                 margin: auto;
                 background-color: lime;
                 color: black;
-                padding: 10px;
                 text-align: center;
-                line-height: 12px;
-                text-decoration: none;
+                line-height: 25px;
             }
             .currentPageHyperlink {
                 background-color: white;
                 color: black;
             }
+            .pagesHyperlinksText {
+                text-decoration: none;
+            }
         </style>
-        <div class="container" id="pagesHyperlinksWrapper">
+        <div class="container" id="pagesHyperlinksContainer">
             <a href="https://necroticphantom.github.io">
-                <div class="pagesHyperlinks currentPageHyperlink" id="indexHyperlink">
-                    <p>Index</p>
+                <div class="pagesHyperlinks currentPageHyperlink" id="homeHyperlink">
+                    <p class="pagesHyperlinksText" id="homeHyperlinkText">Home</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/about-me">
                 <div class="pagesHyperlinks" id="aboutMeHyperlink">
-                    <p>About Me</p>
+                    <p class="pagesHyperlinksText" id="aboutMeHyperlinkText">About Me</p>
+                </div>
+            </a>
+            <a href="https://necroticphantom.github.io/programming-languages">
+                <div class="pagesHyperlinks" id="programmingLanguagesHyperlink">
+                    <p class="pagesHyperlinksText" id="programmingLanguagesHyperlinkText">Programming Languages</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/portfolio">
                 <div class="pagesHyperlinks" id="portfolioHyperlink">
-                    <p>Portfolio</p>
+                    <p class="pagesHyperlinksText" id="portfolioHyperlinkText">Portfolio</p>
                 </div>
             </a>
-            <a href="https://necroticphantom.github.io/blog">
-                <div class="pagesHyperlinks" id="blogHyperlink">
-                    <p>Blog</p>
-                </div>
+        </div>
+        <style>
+            .text {
+                text-decoration: none;
+            }
+        </style>
+        <div class="container" id="profileLinksContainer">
+            <p class="text" id="profiles">Here are links to my github and replit profiles:</p>
+            <a href="https://github.com/necroticphantom" target="_blank">
+                <img scr="img/github-mark.png" alt="github profile">
+            </a>
+            <a href="https://replit.com/@necroticphantom" target="_blank">
+                <img scr="img/replit-mark.png" alt="replit profile">
             </a>
         </div>
     </body>

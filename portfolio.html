@@ -19,35 +19,36 @@
                 margin: auto;
                 background-color: lime;
                 color: black;
-                padding: 10px;
                 text-align: center;
-                line-height: 12px;
-                text-decoration: none;
+                line-height: 25px;
             }
             .currentPageHyperlink {
                 background-color: white;
                 color: black;
             }
+            .pagesHyperlinksText {
+                text-decoration: none;
+            }
         </style>
-        <div class="container" id="pagesHyperlinksWrapper">
+        <div class="container" id="pagesHyperlinksContainer">
             <a href="https://necroticphantom.github.io">
-                <div class="pagesHyperlinks" id="indexHyperlink">
-                    <p>Index</p>
+                <div class="pagesHyperlinks" id="homeHyperlink">
+                    <p class="pagesHyperlinksText" id="homeHyperlinkText">Home</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/about-me">
                 <div class="pagesHyperlinks" id="aboutMeHyperlink">
-                    <p>About Me</p>
+                    <p class="pagesHyperlinksText" id="aboutMeHyperlinkText">About Me</p>
+                </div>
+            </a>
+            <a href="https://necroticphantom.github.io/programming-languages">
+                <div class="pagesHyperlinks" id="programmingLanguagesHyperlink">
+                    <p class="pagesHyperlinksText" id="programmingLanguagesHyperlinkText">Programming Languages</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/portfolio">
                 <div class="pagesHyperlinks currentPageHyperlink" id="portfolioHyperlink">
-                    <p>Portfolio</p>
-                </div>
-            </a>
-            <a href="https://necroticphantom.github.io/blog">
-                <div class="pagesHyperlinks" id="blogHyperlink">
-                    <p>Blog</p>
+                    <p class="pagesHyperlinksText" id="portfolioHyperlinkText">Portfolio</p>
                 </div>
             </a>
         </div>
