@@ -3,6 +3,7 @@ body {
 }
 .container {
     display: flex;
+    justify-content: center;
 }
 .pageLinks {
     width: 14rem;
@@ -12,12 +13,6 @@ body {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     background-color: lime;
-}
-.edgePageLinkLeft {
-    margin-left: 11.5rem;
-}
-.edgePageLinkRight {
-    margin-right: 11.5rem;
 }
 .currentPageLink {
     background-color: white;
