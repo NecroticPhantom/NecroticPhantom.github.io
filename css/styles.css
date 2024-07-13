@@ -14,10 +14,10 @@ body {
     background-color: lime;
 }
 .edgePageLinkLeft {
-    margin-left: 15rem;
+    margin-left: 10rem;
 }
 .edgePageLinkRight {
-    margin-right: 15rem;
+    margin-right: 10rem;
 }
 .currentPageLink {
     background-color: white;
