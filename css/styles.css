@@ -37,10 +37,10 @@ body {
 .externalSiteLogo {
     position: fixed;
     display: flex;
-    bottom:0%;
-    max-height: 2rem;
-    max-width: 2rem;
-    border-radius: 1rem;
+    bottom:2%;
+    max-height: 3rem;
+    max-width: 3rem;
+    border-radius: 1.5rem;
     margin: auto;
     background: white;
 }
