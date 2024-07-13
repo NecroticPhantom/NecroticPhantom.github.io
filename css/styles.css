@@ -3,14 +3,21 @@ body {
 }
 .container {
     display: flex;
-    justify-content: space-between;
 }
 .pageLinks {
     width: 14rem;
     height: 3rem;
     border-radius: 3rem;
     margin: auto;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
     background-color: lime;
+}
+.edgePageLinkLeft {
+    margin-left: 15rem;
+}
+.edgePageLinkRight {
+    margin-right: 15rem;
 }
 .currentPageLink {
     background-color: white;
