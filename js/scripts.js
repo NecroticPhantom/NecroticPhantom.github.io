@@ -1,9 +1,9 @@
-var lightModeButton = document.getElementById("lightModeButton");
-lightModeButton.addEventListener("click", lightMode);
+var lmb = document.getElementById("lightModeButton");
+lmb.addEventListener("click", lightMode);
 function lightMode() {
-    lightModeButton.id = "darkModeButton";
-    lightModeButton.style.borderColor = "mediumblue";
-    lightModeButton.style.backgroundColor = "black";
+    lmb.id = "darkModeButton";
+    lmb.style.borderColor = "mediumblue";
+    dmb.style.backgroundColor = "black";
     document.getElementById("lightModeButtonText").innerText = "Dark Mode";
     document.getElementsByTagName("body").style.backgroundColor = "white";
     document.getElementsByClassName("pageLinks").style.backgroundColor = "mediumblue";
@@ -12,10 +12,10 @@ function lightMode() {
     document.getElementsByClassName("textContainer").style.backgroundColor = "white";
     document.getElementsByClassName("text").style.color = "black";
 };
-var darkModeButton = document.getElementById("darkModeButton");
-lightModeButton.addEventListener("click", darkMode);
+var dmb = document.getElementById("darkModeButton");
+dmb.addEventListener("click", darkMode);
 function darkMode() {
-    darkModeButton.id = "lightModeButton";
+    dmb.id = "lightModeButton";
     document.getElementById("lightModeButtonText").innerText = "Light Mode";
     document.getElementsByTagName("body").style.backgroundColor = "black";
     document.getElementsByClassName("pageLinks").style.backgroundColor = "lime";
