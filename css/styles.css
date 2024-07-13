@@ -47,3 +47,15 @@ body {
 .replitLogo {
     left: 5%;
 }
+.colourSchemeButton {
+    position: fixed;
+    display: flex;
+    bottom:2%;
+    right: 5%;
+    height: 1rem;
+    width: 2rem;
+    margin: auto;
+    border: 0.1rem;
+    border-color: lime;
+    background-color: white;
+}
