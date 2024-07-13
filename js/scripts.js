@@ -1,5 +1,5 @@
 var lightModeButton = document.getElementById("lightModeButton");
-button.addEventListener("click", lightMode);
+lightModeButton.addEventListener("click", lightMode);
 function lightMode() {
     const body = document.getElementsByTagName("body");
     body.style.backgroundColor = "white";
@@ -15,7 +15,7 @@ function lightMode() {
     text.style.color = "black";
 };
 var darkModeButton = document.getElementById("darkModeButton");
-button.addEventListener("click", darkMode);
+lightModeButton.addEventListener("click", darkMode);
 function darkMode() {
     const body = document.getElementsByTagName("body");
     body.style.backgroundColor = "black";
