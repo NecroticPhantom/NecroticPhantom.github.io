@@ -1,6 +1,6 @@
 function customiseSiteNow() {
     var customisingSiteNow = window.prompt("Would you like to customise the website now?");
-    var customisingSiteNow = customisteSiteNow.toLowerCase();
+    var customisingSiteNow = customiseSiteNow.toLowerCase();
     if (customisingSiteNow == "no") {
         return;
     }
