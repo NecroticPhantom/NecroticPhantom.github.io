@@ -1,3 +1,16 @@
+function customiseSiteNow() {
+    var customisingSiteNow = window.prompt("Would you like to customise the website now?")
+    var customisingSiteNow = customisteSiteNow.toLowerCase();
+    if (customisingSiteNow == "no") {
+        customisingSiteNow = False
+    }
+    else if (customisingSiteNow == "yes") {
+        customisingSiteNow = True
+        chooseColour()
+        chooseMode()
+    };
+};
+
 function chooseColour() {
     var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme:");
     var chosenColour = chosenColour.toLowerCase();
