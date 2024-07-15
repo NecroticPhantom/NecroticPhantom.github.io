@@ -38,27 +38,12 @@ body {
     position: fixed;
     display: flex;
     bottom:2%;
-    max-height: 3rem;
-    max-width: 3rem;
-    border-radius: 1.5rem;
+    max-height: 1rem;
+    max-width: 1rem;
+    border-radius: 1rem;
     margin: auto;
     background: white;
 }
 .replitLogo {
     left: 5%;
-}
-.colourSchemeButton {
-    position: fixed;
-    display: flex;
-    bottom:2%;
-    right: 5%;
-    height: 2rem;
-    width: 5rem;
-    margin: auto;
-    border: 0.25rem;
-    border-color: lime;
-    background-color: white;
-}
-.colourSchemeButtonText {
-    color: black;
 }
