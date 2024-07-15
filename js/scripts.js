@@ -1,11 +1,16 @@
 function cookies() {
-    window.alert("IMPORTANT:/n/nThis site uses necessary cookies to store data about preferences on the site.");
-    document.cookie = "cookieAlert = True; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
-    var customisingSiteNow = window.prompt("Would you like to customise the website now?");
-    var customisingSiteNow = customisingSiteNow.toLowerCase();
+    if (cookiesAlert != True) {
+        window.alert("IMPORTANT:/n/nThis site uses necessary cookies to store data about preferences on the site.");
+        document.cookie = "cookiesAlert = True; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    };
     customiseSiteNow();
 };
 function customiseSiteNow() {
+    if (siteCustomised != True) {
+        var customisingSiteNow = window.prompt("Would you like to customise the website now?");
+        var customisingSiteNow = customisingSiteNow.toLowerCase();
+        document.cookie = "siteCustomised = True; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    };
     if (customisingSiteNow == "no") {
         return;
     }
@@ -15,18 +20,22 @@ function customiseSiteNow() {
     };
 };
 function chooseColour() {
-    var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme:");
-    var chosenColour = chosenColour.toLowerCase();
-    document.cookie = "chosenColour = ", chosenColour, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    if (chosenColour == undefined) {
+        var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme:");
+        var chosenColour = chosenColour.toLowerCase();
+        document.cookie = "chosenColour = ", chosenColour, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    };
     var pageLinkElements = document.getElementsByClassName("pageLinks");
     for (var i = 0; i < pageLinkElements.length; i++) {
         pageLinkElements[i].style.backgroundColor = chosenColour;
     };
 };
 function chooseMode() {
-    var chosenMode = window.prompt("Would you like to use light mode or dark mode (Type: 'light' or 'dark')?");
-    var chosenMode = chosenMode.toLowerCase();
-    document.cookie = "chosenMode = ", chosenMode, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    if (chosenMode == undefined) {
+        var chosenMode = window.prompt("Would you like to use light mode or dark mode (Type: 'light' or 'dark')?");
+        var chosenMode = chosenMode.toLowerCase();
+        document.cookie = "chosenMode = ", chosenMode, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    };
     if (chosenMode == "light") {
         lightMode()
     }
