@@ -23,7 +23,7 @@ function lightMode() {
     };
     var currentPageLinkElements = document.getElementsByClassName("currentPageLinks");
     for (var i = 0; i < currentPageLinkElements.length; i++) {
-        currentPageLinkElements[i].style.backgroundColor = "white";
+        currentPageLinkElements[i].style.backgroundColor = "black";
     };
     var pageLinkTextElements = document.getElementsByClassName("pageLinkTextElements");
     for (var i = 0; i < pageLinkTextElements.length; i++) {
@@ -45,7 +45,7 @@ function darkMode() {
     };
     var currentPageLinkElements = document.getElementsByClassName("currentPageLinks");
     for (var i = 0; i < currentPageLinkElements.length; i++) {
-        currentPageLinkElements[i].style.backgroundColor = "black";
+        currentPageLinkElements[i].style.backgroundColor = "white";
     };
     var pageLinkTextElements = document.getElementsByClassName("pageLinkTextElements");
     for (var i = 0; i < pageLinkTextElements.length; i++) {
