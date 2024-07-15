@@ -9,7 +9,7 @@ function chooseMode() {
     if (chosenMode == "light") {
         lightMode()
     }
-    elif (chosenMode == "dark") {
+    else if (chosenMode == "dark") {
         darkMode()
     };
 };
