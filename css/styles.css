@@ -52,10 +52,10 @@ body {
     display: flex;
     bottom:2%;
     right: 5%;
-    height: 1rem;
-    width: 2rem;
+    height: 2rem;
+    width: 5rem;
     margin: auto;
-    border: 0.1rem;
+    border: 0.25rem;
     border-color: lime;
     background-color: white;
 }
