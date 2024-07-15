@@ -1,6 +1,11 @@
-function customiseSiteNow() {
+function cookies() {
+    window.alert("IMPORTANT:/n/nThis site uses necessary cookies to store data about preferences on the site.");
+    document.cookie = "cookieAlert = True; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
     var customisingSiteNow = window.prompt("Would you like to customise the website now?");
     var customisingSiteNow = customisingSiteNow.toLowerCase();
+    customiseSiteNow();
+};
+function customiseSiteNow() {
     if (customisingSiteNow == "no") {
         return;
     }
@@ -9,10 +14,10 @@ function customiseSiteNow() {
         chooseMode();
     };
 };
-
 function chooseColour() {
     var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme:");
     var chosenColour = chosenColour.toLowerCase();
+    document.cookie = "chosenColour = ", chosenColour, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
     var pageLinkElements = document.getElementsByClassName("pageLinks");
     for (var i = 0; i < pageLinkElements.length; i++) {
         pageLinkElements[i].style.backgroundColor = chosenColour;
@@ -21,6 +26,7 @@ function chooseColour() {
 function chooseMode() {
     var chosenMode = window.prompt("Would you like to use light mode or dark mode (Type: 'light' or 'dark')?");
     var chosenMode = chosenMode.toLowerCase();
+    document.cookie = "chosenMode = ", chosenMode, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
     if (chosenMode == "light") {
         lightMode()
     }
