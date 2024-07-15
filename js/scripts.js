@@ -2,8 +2,8 @@ function chooseColour() {
     var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme:");
     var chosenColour = chosenColour.toLowerCase();
     var pageLinkElements = document.getElementsByClassName("pageLinks");
-    for (var i = 0; i < elements.length; i++) {
-    elements[i].style.backgroundColor = chosenColour;
+    for (var i = 0; i < pageLinkElements.length; i++) {
+        pageLinkElements[i].style.backgroundColor = chosenColour;
     };
 };
 function chooseMode() {
@@ -16,19 +16,47 @@ function chooseMode() {
         darkMode()
     };
 };
-/*function lightMode() {
-    document.getElementsByTagName("body").style.backgroundColor = "white";
-    document.getElementsByClassName("pageLinks").style.backgroundColor = "mediumblue";
-    document.getElementsByClassName("currentPageLink").style.backgroundColor = "white";
-    document.getElementsByClassName("pageLinksText").style.backgroundColor = "white";
-    document.getElementsByClassName("textContainer").style.backgroundColor = "white";
-    document.getElementsByClassName("text").style.color = "black";
-}; */
-/*function darkMode() {
-    document.getElementsByTagName("body").style.backgroundColor = "black";
-    document.getElementsByClassName("pageLinks").style.backgroundColor = "lime";
-    document.getElementsByClassName("currentPageLink").style.backgroundColor = "black";
-    document.getElementsByClassName("pageLinksText").style.backgroundColor = "black";
-    document.getElementsByClassName("textContainer").style.backgroundColor = "black";
-    document.getElementsByClassName("text").style.color = "white";
-}; */
+function lightMode() {
+    var bodyElements = document.getElementsByTagName("body");
+    for (var i = 0; i < bodyElements.length; i++) {
+        bodyElements[i].style.backgroundColor = "white";
+    };
+    var currentPageLinkElements = document.getElementsByClassName("currentPageLinks");
+    for (var i = 0; i < currentPageLinkElements.length; i++) {
+        currentPageLinkElements[i].style.backgroundColor = "white";
+    };
+    var pageLinkTextElements = document.getElementsByClassName("pageLinkTextElements");
+    for (var i = 0; i < pageLinkTextElements.length; i++) {
+        pageLinkTextElements[i].style.backgroundColor = "white";
+    };
+    var textContainerElements = document.getElementsByClassName("textContainer");
+    for (var i = 0; i < textContainerElements.length; i++) {
+        textContainerElements[i].style.backgroundColor = "white";
+    };
+    var textElements = document.getElementsByClassName("text");
+    for (var i = 0; i < textElements.length; i++) {
+        textElements[i].style.color = "black";
+    };
+};
+function darkMode() {
+    var bodyElements = document.getElementsByTagName("body");
+    for (var i = 0; i < bodyElements.length; i++) {
+        bodyElements[i].style.backgroundColor = "black";
+    };
+    var currentPageLinkElements = document.getElementsByClassName("currentPageLinks");
+    for (var i = 0; i < currentPageLinkElements.length; i++) {
+        currentPageLinkElements[i].style.backgroundColor = "black";
+    };
+    var pageLinkTextElements = document.getElementsByClassName("pageLinkTextElements");
+    for (var i = 0; i < pageLinkTextElements.length; i++) {
+        pageLinkTextElements[i].style.backgroundColor = "black";
+    };
+    var textContainerElements = document.getElementsByClassName("textContainer");
+    for (var i = 0; i < textContainerElements.length; i++) {
+        textContainerElements[i].style.backgroundColor = "black";
+    };
+    var textElements = document.getElementsByClassName("text");
+    for (var i = 0; i < textElements.length; i++) {
+        textElements[i].style.color = "white";
+    };
+};
