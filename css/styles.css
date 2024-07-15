@@ -38,12 +38,12 @@ body {
     position: fixed;
     display: flex;
     bottom:2%;
-    max-height: 1rem;
-    max-width: 1rem;
-    border-radius: 1rem;
+    max-height: 2rem;
+    max-width: 2rem;
+    border-radius: 2rem;
     margin: auto;
     background: white;
 }
 .replitLogo {
-    left: 5%;
+    left: 3.5%;
 }
