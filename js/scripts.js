@@ -1,5 +1,7 @@
-function localStorage() { //add accept and decline (if decline: nothing, if accept: make a local storage for the accept and use getItem so no other local storage is used if declined)
-    if (window.localstorage.getItem("localStorageAlert") === null) {
+//fix localstarage
+//add accept and decline (if decline: nothing, if accept: make a local storage for the accept and use getItem so no other local storage is used if declined)
+function localStorageStuff() {
+    if (localstorage.getItem("localStorageAlert") === null) {
         window.alert("IMPORTANT:/n/nThis site uses local storage to store data about preferences on the site.");
         localstorage.localStorageAlert = True;
     };
