@@ -75,7 +75,7 @@ function chooseMode() {
         };
         if (chosenMode == "light" || chosenMode == "light mode" || chosenMode == "dark" || chosenMode == "dark mode") {
             chooseModeInput = True;
-        };
+        }
         else {
             window.alert("INVALID MODE");
         };
