@@ -1,48 +1,99 @@
-function cookies() {
-    if (cookiesAlert != True) {
-        window.alert("IMPORTANT:/n/nThis site uses necessary cookies to store data about preferences on the site.");
-        document.cookie = "cookiesAlert = True; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+function localStorage() { //add accept and decline (if decline: nothing, if accept: make a local storage for the accept and use getItem so no other local storage is used if declined)
+    if (localstorage.getItem("localStorageAlert") === null) {
+        window.alert("IMPORTANT:/n/nThis site uses local storage to store data about preferences on the site.");
+        localstorage.localStorageAlert = True;
     };
-    customiseSiteNow();
+    if (localstorage.getItem("siteCustomised") === null) {
+        customiseSiteNow();
+    }
+    else {
+        applyColour();
+        applyMode();
+    };
 };
 function customiseSiteNow() {
-    if (siteCustomised != True) {
-        var customisingSiteNow = window.prompt("Would you like to customise the website now?");
-        var customisingSiteNow = customisingSiteNow.toLowerCase();
-        document.cookie = "siteCustomised = True; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    var customiseSiteNowInput = False;
+    while (!(customiseSiteNowInput)) {
+        if (localstorage.getItem("siteCustomised") === null) {
+            var customisingSiteNow = window.prompt("Would you like to customise the website now?/n(1/3)");
+            var customisingSiteNow = customisingSiteNow.toLowerCase();
+        };
+        if (customisingSiteNow == "no") {
+            customiseSiteNowInput = True;
+            localstorage.siteCustomised = True;
+            return;
+        }
+        else if (customisingSiteNow == "yes") {
+            customiseSiteNowInput = True;
+        }
+        else {
+            window.alert("INVALID INPUT");
+        };
     };
-    if (customisingSiteNow == "no") {
-        return;
-    }
-    else if (customisingSiteNow == "yes") {
+    if (customisingSiteNow == "yes") {
+        localstorage.siteCustomised = True;
         chooseColour();
         chooseMode();
     };
 };
 function chooseColour() {
-    if (chosenColour == undefined) {
-        var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme:");
-        var chosenColour = chosenColour.toLowerCase();
-        document.cookie = "chosenColour = ", chosenColour, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    var chooseColourInput = False;
+    while (!(chooseColourInput)) {
+        if (!localstorage.getItem("chosenColour") === null) {
+            var chosenColour = window.prompt("Type the javascript colour you would like to be used in the colour scheme (invalid colour will result in default colour):/n(2/3)");
+        };
+        if (chosenColourTest == True) {
+            chooseColourInput = True;
+            var chosenColour = chosenColour.toLowerCase();
+        }
+        else {
+            window.alert("INVALID COLOUR");
+        };
     };
-    var pageLinkElements = document.getElementsByClassName("pageLinks");
-    for (var i = 0; i < pageLinkElements.length; i++) {
-        pageLinkElements[i].style.backgroundColor = chosenColour;
+    localstorage.chosenColour = chosenColour;
+    applyColour();
+};
+function isValidColor(colourStr) {
+    var colourTest = new Option().style;
+    colourTest.color = colourStr;
+    return colourTest.color == colourStr.toLowerCase();
+};
+function applyColour() {
+    if (localstorage.getItem("chosenColour") !== null) {
+        var pageLinkElements = document.getElementsByClassName("pageLinks");
+        for (var i = 0; i < pageLinkElements.length; i++) {
+            pageLinkElements[i].style.backgroundColor = localstorage.chosenColour;
+        };
     };
 };
 function chooseMode() {
-    if (chosenMode == undefined) {
-        var chosenMode = window.prompt("Would you like to use light mode or dark mode (Type: 'light' or 'dark')?");
-        var chosenMode = chosenMode.toLowerCase();
-        document.cookie = "chosenMode = ", chosenMode, "; expires = Mon, 31 Dec 2025 23:59:59 BWT; path=/";
+    var chooseModeInput = False
+    while (!(chooseModeInput)) {
+        if (localstorage.getItem("chosenMode") === null) {
+            var chosenMode = window.prompt("Would you like to use light mode or dark mode (Type: 'light' or 'dark')?/n(3/3)");
+            var chosenMode = chosenMode.toLowerCase();
+        };
+        if (chosenMode == "light" || chosenMode == "light mode" || chosenMode == "dark" || chosenMode == "dark mode") {
+            chooseModeInput = True;
+        };
+        else {
+            window.alert("INVALID MODE");
+        };
     };
-    if (chosenMode == "light") {
-        lightMode()
-    }
-    else if (chosenMode == "dark") {
-        darkMode()
+    localstorage.chosenMode = chosenMode;
+    applyMode();
+};
+function applyMode() {
+    if (localstorage.getItem("chosenColour") !== null) {
+        if (localstorage.chosenMode == "light") {
+            lightMode();
+        }
+        else if (localstorage.chosenMode == "dark") {
+            darkMode();
+        };
     };
 };
+
 function lightMode() {
     var bodyElements = document.getElementsByTagName("body");
     for (var i = 0; i < bodyElements.length; i++) {
