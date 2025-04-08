@@ -1,4 +1,4 @@
-//fix localstarage
+//fix localstorage
 //add accept and decline (if decline: nothing, if accept: make a local storage for the accept and use getItem so no other local storage is used if declined)
 function localStorageStuff() {
     if (localstorage.getItem("localStorageAlert") === null) {
