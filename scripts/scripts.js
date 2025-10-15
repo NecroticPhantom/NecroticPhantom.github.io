@@ -11,6 +11,6 @@ function pageLinkHover(elementID) {
   document.getElementById(elementID).style.backgroundColor = "cornflowerblue";
 }
 
-function pageLinkStopHover() {
+function pageLinkStopHover(elementID) {
   document.getElementById(elementID).style.backgroundColor = "blue";
 }
