@@ -12,10 +12,10 @@ body {
     margin: auto;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    background-color: cornflowerblue;
+    background-color: blue;
 }
 .currentPageLink {
-    background-color: blue;
+    background-color: cornflowerblue;
 }
 .pageLinksText {
     line-height: 3rem;
