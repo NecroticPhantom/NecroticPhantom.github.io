@@ -44,3 +44,19 @@ body {
     margin: auto;
     background: white;
 }
+
+.gridContainer {
+    background-color: white;
+}
+.rowContainer {
+    position: absolute;
+    margin: 0px;
+    display: flex;
+    align-items: left;
+}
+.evenCell {
+    background-color: grey;
+}
+.oddCell {
+    background-color: darkgrey;
+}
