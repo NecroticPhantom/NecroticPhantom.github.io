@@ -12,5 +12,7 @@ function pageLinkHover(elementID) {
 }
 
 function pageLinkStopHover(elementID) {
-  document.getElementById(elementID).style.backgroundColor = "blue";
+  if (elementID.classList.contains("currentPageLink") == false) {
+    document.getElementById(elementID).style.backgroundColor = "blue";
+  }
 }

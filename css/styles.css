@@ -49,12 +49,12 @@ body {
     background-color: white;
 }
 .rowContainer {
-    position: absolute;
+    position: relative;
     display: flex;
     align-items: left;
 }
 .gridCell {
-    position: absolute;
+    position: relative;
 }
 .evenCell {
     background-color: grey;
