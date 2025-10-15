@@ -50,9 +50,11 @@ body {
 }
 .rowContainer {
     position: absolute;
-    margin: 0px;
     display: flex;
     align-items: left;
+}
+.gridCell {
+    position: absolute;
 }
 .evenCell {
     background-color: grey;
