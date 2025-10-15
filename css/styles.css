@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: white;
 }
 .container {
     display: flex;
@@ -12,10 +12,10 @@ body {
     margin: auto;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
-    background-color: lime;
+    background-color: cornflowerblue;
 }
 .currentPageLink {
-    background-color: white;
+    background-color: blue;
 }
 .pageLinksText {
     line-height: 3rem;
@@ -27,12 +27,12 @@ body {
     height: 3rem;
     border-radius: 3rem;
     margin: auto;
-    background-color: black;
+    background-color: white;
 }
 .text {
     line-height: 3rem;
     text-align: center;
-    color: white;
+    color: black;
 }
 .externalSiteLogo {
     position: fixed;

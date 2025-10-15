@@ -3,17 +3,17 @@
     <head>
         <link rel="stylesheet" href="css/styles.css">
         <script src="js/scripts.js"></script>
-        <title>Home</title>
+        <title>About Me</title>
     </head>
-    <body>
+    <body onload="localStorageStuff()">
         <div class="container" id="pageLinksContainer">
             <a href="https://necroticphantom.github.io" style="text-decoration: none;">
-                <div class="pageLinks currentPageLink" id="homeLink">
+                <div class="pageLinks" id="homeLink">
                     <p class="pageLinksText" id="homeLinkText">Home</p>
                 </div>
             </a>
             <a href="https://necroticphantom.github.io/pathfinding" style="text-decoration: none;">
-                <div class="pageLinks" id="pathfindingLink">
+                <div class="pageLinks currentPageLink" id="pathfindingLink">
                     <p class="pageLinksText" id="pathfindingLinkText">Pathfinding</p>
                 </div>
             </a>
@@ -21,8 +21,5 @@
         <div class="textContainer">
             <p class="text">test</p>
         </div>
-        <a href="https://github.com/necroticphantom" target="_blank">
-            <img src="img/github-logo.png" alt="github" class="externalSiteLogo" id="githubLogo">
-        </a>
     </body>
 </html>
